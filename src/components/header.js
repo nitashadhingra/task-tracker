@@ -1,17 +1,17 @@
 import React from 'react'
 import Button from './button.js'
 
-const Header = ({addNew}) => {
+const Header = ({optionToAddTask, showForm}) => {
     
     const handleClick = () => {
         console.log("click hogya")
-        addNew()
+        optionToAddTask()
     }
 
     return (
         <div className="heading">
             <h1>Your Tasks</h1>
-            <Button text="+" onClick={handleClick} />
+            <Button text={showForm ? "x" : "+"} onClick={handleClick} />
         </div>
     )
 }

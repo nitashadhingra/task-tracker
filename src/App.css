@@ -23,10 +23,10 @@
 }
 
 .btn{
-  height: 32px;
-  width: 32px;
+  height: 34px;
+  width: 34px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   margin: auto 0px;
   border-radius: 50%;
   background-color: rgb(0,0,0, .53);
@@ -38,6 +38,7 @@
   padding: 8px 32px;
   margin: 8px 16px;
   border-radius: 8px;
+  border-left: 4px solid black;
 }
 
 .task-title{
@@ -70,7 +71,8 @@
 }
 
 label{
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 800;
   margin: 8px;
   margin-bottom: 0;
 }
@@ -80,17 +82,17 @@ input{
   border:none;
   margin: 8px;
   margin-top:4px;
-  padding: 4px 8px;
-  font-size: 12px;
+  padding: 8px 12px;
+  font-size: 14px;
 }
 .btn-wide{
   margin: 8px;
-  padding: 4px;
+  padding: 8px;
   float: right;
   width: 30%;
   background-color: rgb(40, 44, 52, .83);
   color: whitesmoke;
-  
+  font-size: 14px;
 }
 
 

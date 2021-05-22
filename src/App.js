@@ -37,7 +37,7 @@ function App() {
     setShowForm(!showForm);
   }
   
-  const newTask = (task) => {
+  const addTask = (task) => {
     const id = tasks.length + 1;
     const newToDo = {id, ...task};
     console.log("new");
@@ -54,8 +54,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header addNew={ optionToAddTask }/>
-      { showForm ? <NewTask addTask={newTask} /> : ('') }
+      <Header optionToAddTask={ optionToAddTask } showForm = {showForm} />
+      { showForm ? <NewTask addTask={addTask} /> : ('') }
       { (tasks.length > 0) ? 
           <Tasks tasks = {tasks} onDone={delTask} /> 
           : ('Hurray! Nothing pending!') }

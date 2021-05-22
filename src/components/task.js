@@ -5,7 +5,7 @@ const Todo = ({task, onDone}) => {
         <div className="task-item">
             <h3 className="task-title">
                 {task.title} 
-                <FaCheckCircle style={{color: 'black'}} onClick={() => onDone(task.id)} />
+                <FaCheckCircle style={{color: '#48c072'}} onClick={() => onDone(task.id)} />
             </h3>
             <p className="task-date">{task.deadline}</p>
         </div>
