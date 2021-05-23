@@ -10,7 +10,7 @@ const NewTask = ({addTask}) => {
     const submitForm = (e) => {
         e.preventDefault()
         
-        if(!title){
+        if(!title) {
             alert('Add task')
             setDeadline('');
             setReminder(false);

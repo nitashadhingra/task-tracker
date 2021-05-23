@@ -3,8 +3,8 @@ import Todo from './task'
 const Tasks = ({tasks, onDone}) => {
     return (
         <div>
-            {tasks.map((task) => (
-                <Todo key={task.id} task={task} onDone={onDone} />
+            {tasks.map((task, idx) => (
+                <Todo key={idx} task={task} onDone={onDone} />
             ))}
         </div>
     )
