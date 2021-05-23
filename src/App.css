@@ -1,12 +1,45 @@
+html{
+  background: rgb(37, 37, 37);  
+}
 .App {
   font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
-  background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+  
   color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.dateSection{
+  /* float: right; */
+  margin: 64px;
+}
+
+.dateBox{
+  text-align: center;
+  background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+  padding: 8px;
+  border-radius: 8px;
+}
+.dateInnerBox{
+  background-color: #1d1f22c9;
+  /* filter: blur(5px); */
+  padding: 55px 46px;
+}
+.dateInnerBox h1, h2,h3{
+  position: relative;
+  overflow: hidden;
+}
+
+.tasksSection{
+  background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
   max-width: 50vw;
   min-height: 300px;
   border-radius: 8px;
-  margin: 32px auto;
+  margin: 32px 0;
   padding: 36px;
+  /* float:left; */
 }
 
 .heading{
@@ -20,6 +53,7 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 8px 2px 13px rgb(31 29 29 / 50%);
 }
 
 .btn{
@@ -39,6 +73,7 @@
   margin: 8px 16px;
   border-radius: 8px;
   border-left: 4px solid black;
+  box-shadow: 8px 2px 13px rgb(31 29 29 / 50%);
 }
 
 .task-title{

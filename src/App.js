@@ -1,6 +1,8 @@
-import Header from './components/header.js'
-import Tasks from './components/listtasks'
-import NewTask from './components/newTask'
+import Header from './components/header.jsx'
+import Tasks from './components/listtasks.jsx'
+import NewTask from './components/newTask.jsx'
+import Today from './components/date.jsx'
+
 import './App.css';
 import {useState, useEffect} from 'react'
 
@@ -59,11 +61,16 @@ function App() {
 
   return (
     <div className="App">
-      <Header optionToAddTask={optionToAddTask} showForm = {showForm} />
-      { showForm ? <NewTask addTask={addTask} /> : ('') }
-      { (tasks.length > 0) ?
-          <Tasks tasks = {tasks} onDone={delTask} /> 
-          : ('Hurray! Nothing pending!') }
+      <div className="tasksSection">
+        <Header optionToAddTask={optionToAddTask} showForm = {showForm} />
+        { showForm ? <NewTask addTask={addTask} /> : ('') }
+        { (tasks.length > 0) ?
+            <Tasks tasks = {tasks} onDone={delTask} /> 
+            : ('Hurray! Nothing pending!') }
+      </div>
+      <div className="dateSection">
+        <Today />
+      </div>
     </div>
   );
 }
